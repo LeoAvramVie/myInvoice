@@ -1,0 +1,15 @@
+.auth{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+}
+.mat-tab-label{
+  color: white !important;
+  font-family: Helvetica, serif;
+}
+
+
+
+

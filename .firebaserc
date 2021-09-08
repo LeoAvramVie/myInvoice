@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "myinvoice-cf650": {
+      "hosting": {
+        "myInvoice": [
+          "myinvoice-cf650"
+        ]
+      }
+    }
+  }
+}

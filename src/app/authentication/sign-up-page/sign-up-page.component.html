@@ -1,0 +1,22 @@
+<form class="example-form">
+
+  <mat-form-field class="example-full-width" appearance="outline" >
+    <mat-label>Benutzername</mat-label>
+    <mat-icon matPrefix>edit</mat-icon>
+    <input matInput placeholder="signUpUserName" value="">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="outline" >
+    <mat-label>E-mail </mat-label>
+    <mat-icon matPrefix>email</mat-icon>
+    <input matInput placeholder="emailAdresse" value="">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width" appearance="outline">
+    <mat-label>Password</mat-label>
+    <mat-icon matPrefix>lock</mat-icon>
+    <input matInput placeholder="password" value="">
+  </mat-form-field>
+
+</form>
+<button mat-button (click)="loginGoogle()" class="google">Login or Signup With Google</button>
