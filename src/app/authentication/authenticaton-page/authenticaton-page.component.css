@@ -1,9 +1,21 @@
 .auth{
+  width: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  align-content: center;
   color: white;
+}
+
+.container{
+  background-color: rgba(255,255,255,0.3)!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 50%;
+  width: 50%;
 }
 .mat-tab-label{
   color: white !important;
