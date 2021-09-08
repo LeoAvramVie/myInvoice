@@ -7,8 +7,22 @@
 }
 .mat-tab-label{
   color: white !important;
-  font-family: Helvetica, serif;
+  font-family: Roboto, serif;
+  font-weight: 300;
 }
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: rgba(248, 248, 248, 0.2);
+}
+.mat-tab-list{
+  margin-right: 165px!important;
+}
+.mat-tab-label-container{
+  border: none;
+}
+.mat-tab-nav-bar, .mat-tab-header{
+  border-bottom: none;
+}
+
 
 
 
