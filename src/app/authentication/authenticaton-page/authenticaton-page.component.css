@@ -1,3 +1,30 @@
+.box{
+position: relative
+}
+
+.box .square{
+position:absolute;
+backdrop-filter:blur(5px);
+border: 1px solid rgba(255,255,255,0.2);
+background-color:rgba(255,255,255,0.2);
+box-shadow: 0 5px 55px rgba(245, 240, 240, 0.28);
+border: 1px solid rgba(255, 255, 255, 0.07);
+border-radius: 10px;
+
+
+
+
+}
+
+.box .square:nth-child(1){
+top: 100px;
+right: 10%;
+width: 100px;
+height: 100px;
+}
+
+
+
 .auth{
   display: flex;
   flex-direction: row;
@@ -11,14 +38,16 @@
 }
 
 .container{
-  background-color: rgba(255, 255, 255, 0.08) !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
   height: 450px;
   width: 400px;
   border-radius: 15px;
   padding: 50px;
   box-shadow: 0 5px 55px rgba(245, 240, 240, 0.28);
   border: 1px solid rgba(255, 255, 255, 0.07);
-  z-index: 1;
+  z-index: 3;
+  backdrop-filter:blur(4px);
+
 }
 
 .mat-tab-label{
@@ -28,23 +57,26 @@
 }
 
 .mat-form-field-appearance-outline .mat-form-field-outline {
-  color: rgba(248, 248, 248, 0.2);
+  color: rgba(248, 248, 248, 0.3);
 }
 
 .mat-tab-label-container{
   border: none;
+
 }
 
 .mat-tab-nav-bar, .mat-tab-header{
   border-bottom: none;
+   width:100%;
 }
 
 .mat-ink-bar{
 height: 1px !important;
 }
 
-
-
+.mat-tab-header-pagination-chevron{
+display:none;
+}
 
 
 
