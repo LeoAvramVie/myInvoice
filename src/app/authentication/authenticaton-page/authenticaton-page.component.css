@@ -13,11 +13,12 @@
 .container{
   background-color: rgba(255, 255, 255, 0.08) !important;
   height: 450px;
-  width: 50vh;
+  width: 400px;
   border-radius: 15px;
   padding: 50px;
   box-shadow: 0 5px 55px rgba(245, 240, 240, 0.28);
   border: 1px solid rgba(255, 255, 255, 0.07);
+  z-index: 1;
 }
 
 .mat-tab-label{
@@ -37,6 +38,8 @@
 .mat-tab-nav-bar, .mat-tab-header{
   border-bottom: none;
 }
+
+
 
 
 
