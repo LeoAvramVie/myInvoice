@@ -1,4 +1,4 @@
-<form class="example-form">
+<form class="example-form example-full-width">
     <mat-form-field class="example-full-width" appearance="outline" >
       <mat-label>E-mail</mat-label>
       <mat-icon matPrefix>email</mat-icon>
@@ -10,5 +10,11 @@
     <mat-icon matPrefix>lock</mat-icon>
     <input matInput value="">
   </mat-form-field>
+<button mat-button
+        class="example-full-width"
+        matTooltip="Mit Google einloggen"
+        matTooltipHideDelay="100000"
+>
+  <mat-icon  (click)="loginGoogle()" svgIcon="logo"></mat-icon>
+</button>
 </form>
-  <button mat-button (click)="loginGoogle()" class="google">Login or Signup With Google</button>

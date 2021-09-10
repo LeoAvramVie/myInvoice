@@ -9,10 +9,21 @@
   color: rgb(255, 255, 255) !important;
 }
 mat-label{
-  color: rgba(248, 248, 248, 0.2);
+  color: rgba(248, 248, 248, 0.42);
   font-family: Roboto, serif;
   font-weight: 150;
 }
 .example-form{
   margin-top: 50px;
 }
+mat-icon{
+  color: rgba(255, 255, 255, 0.61) !important;
+}
+.googleBtn{
+  color: rgba(255, 255, 255, 0.61) !important;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  font-family: Roboto, serif;
+  font-weight: 150;
+}
+
