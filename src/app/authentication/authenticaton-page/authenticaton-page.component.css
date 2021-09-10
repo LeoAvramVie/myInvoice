@@ -39,7 +39,9 @@
   border-bottom: none;
 }
 
-
+.mat-ink-bar{
+height: 1px !important;
+}
 
 
 
