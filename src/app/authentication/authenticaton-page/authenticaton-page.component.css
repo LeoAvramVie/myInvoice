@@ -1,14 +1,50 @@
 .auth{
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  color: white;
+  align-content: center;
+  height: 100vh;
+  overflow: hidden;
+
 }
+
+.container{
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  height: 450px;
+  width: 400px;
+  border-radius: 15px;
+  padding: 50px;
+  box-shadow: 0 5px 55px rgba(245, 240, 240, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  z-index: 1;
+}
+
 .mat-tab-label{
   color: white !important;
-  font-family: Helvetica, serif;
+  font-family: Roboto, serif;
+  font-weight: 300;
 }
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: rgba(248, 248, 248, 0.2);
+}
+
+.mat-tab-label-container{
+  border: none;
+}
+
+.mat-tab-nav-bar, .mat-tab-header{
+  border-bottom: none;
+}
+
+
+
+
+
+
+
 
 
 
