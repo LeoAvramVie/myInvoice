@@ -1,9 +1,14 @@
 .example-full-width {
   width: 100%;
+
 }
 
+
 ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
-  color: rgba(255, 255, 255, 0.61) !important;
+   opacity: 0.5!important;
+    background-color: rgba(255,255,255,0.1);
+
+
 }
 ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
   color: rgb(255, 255, 255) !important;
@@ -12,9 +17,11 @@ mat-label{
   color: rgba(248, 248, 248, 0.42);
   font-family: Roboto, serif;
   font-weight: 150;
+
 }
 .example-form{
   margin-top: 50px;
+
 }
 mat-icon{
   color: rgba(255, 255, 255, 0.61) !important;
@@ -27,3 +34,7 @@ mat-icon{
   font-weight: 150;
 }
 
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-flex{
+
+  border-radius: 10px;
+}
