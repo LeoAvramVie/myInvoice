@@ -9,10 +9,18 @@ border: 1px solid rgba(255,255,255,0.2);
 background-color:rgba(255,255,255,0.2);
 box-shadow: 0 5px 55px rgba(245, 240, 240, 0.28);
 border-radius: 10px;
+  animation: animate 10s linear infinite;
+  animation-delay: calc(-1s * var(--i));
 
+}
 
-
-
+@keyframes animate {
+  0%, 100%{
+    transform: translateY(-40px);
+  }
+  50%{
+    transform: translateY(40px);
+  }
 }
 
 .box .square:nth-child(1){
@@ -23,12 +31,25 @@ height: 100px;
 }
 
 .box .square:nth-child(2){
-  top: 250px;
-  right: 50%;
-  width: 200px;
-  height: 200px;
+  top: 400px;
+  right: 10%;
+  width: 50px;
+  height: 100px;
+  z-index: 21;
 }
 
+.box .square:nth-child(3){
+  top: -150px;
+  right: 50%;
+  width: 100px;
+  height: 200px;
+}
+.box .square:nth-child(4){
+  top: 550px;
+  right: 85%;
+  width: 150px;
+  height: 200px;
+}
 
 
 
