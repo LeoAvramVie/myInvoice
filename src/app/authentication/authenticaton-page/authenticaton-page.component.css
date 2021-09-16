@@ -4,8 +4,10 @@ position: relative
 
 .box .square{
 position:absolute;
-backdrop-filter:blur(5px);
-border: 1px solid rgba(255,255,255,0.2);
+backdrop-filter:blur(3px);
+border: 1px solid rgba(255,255,255,0.5);
+  border-left: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
 background-color:rgba(255,255,255,0.2);
 box-shadow: 0 25px 45px rgba(0,0,0,0.1);
 border-radius: 10px;
@@ -16,7 +18,7 @@ border-radius: 10px;
 
 @keyframes animate {
   0%, 100%{
-    transform: translateX(-40px);
+    transform: translateY(-40px);
 
   }
   50%{
@@ -35,7 +37,7 @@ height: 100px;
 .box .square:nth-child(2){
   top: 400px;
   right: 10%;
-  width: 50px;
+  width: 150px;
   height: 100px;
 
 }
@@ -54,6 +56,15 @@ height: 100px;
   height: 200px;
   z-index: 21;
 }
+
+.box .square:nth-child(5){
+  top: 350px;
+  right: 45%;
+  width: 50px;
+  height: 50px;
+  z-index: 21;
+}
+
 
 
 
