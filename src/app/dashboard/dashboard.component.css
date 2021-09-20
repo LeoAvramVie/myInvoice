@@ -1,0 +1,22 @@
+.container{
+
+display: grid;
+  height: 100vh;
+  align-content: space-evenly;
+
+
+}
+
+
+.child1{
+  background-color: #EE7752;
+}
+.child2{
+  background-color: #6C5B7B;
+}
+.child3{
+  background-color: #69beb1;
+}
+.child4{
+  background-color:#C06C84;
+}
