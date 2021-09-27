@@ -79,10 +79,11 @@
   align-content: center;
   height: 100vh;
   overflow: hidden;
+  margin: 2px;
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.38) !important;
+  background-color: rgba(0,0,0,0.5) !important;
   height: 450px;
   width: 400px;
   border-radius: 15px;

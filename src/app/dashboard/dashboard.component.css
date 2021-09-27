@@ -1,22 +1,28 @@
-.container{
 
-display: grid;
-  height: 100vh;
-  align-content: space-evenly;
 
+box__container {
+display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
 
 }
 
 
-.child1{
-  background-color: #EE7752;
-}
-.child2{
-  background-color: #6C5B7B;
-}
-.child3{
-  background-color: #69beb1;
-}
-.child4{
-  background-color:#C06C84;
+
+
+
+.box__container__items div{
+  background-color: rgba(0,0,0,0.5) !important;
+  height:15em;
+  width: 60em;
+  border-radius: 10px;
+  box-shadow: 0 5px 55px rgba(245, 240, 240, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  z-index: 3;
+  backdrop-filter: blur(4px);
+  margin-top: 20px;
+
+
+
 }
