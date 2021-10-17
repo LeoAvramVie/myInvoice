@@ -9,7 +9,7 @@
   color: rgb(255, 255, 255) !important;
 }
 mat-label{
-  color: rgba(248, 248, 248, 0.2);
+  color: rgba(248, 248, 248, 0.8);
   font-family: Roboto, serif;
   font-weight: 150;
 }

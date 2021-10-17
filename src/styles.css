@@ -3,17 +3,18 @@
 body{
   font-family: Roboto, "Helvetica Neue", sans-serif;
   color: white;
-  height: 100%;
-  width: 100%;
+
   overflow: hidden;
   background: #355C7D;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(-45deg, #C06C84, #6C5B7B, #355C7D, #E73C7E, #EE7752);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(-45deg, #C06C84, #6C5B7B, #355C7D, #E73C7E, #EE7752); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(-45deg, #C06C84, #6C5B7B, #355C7D, #62a294, #EE7752);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(-45deg, #C06C84, #6C5B7B, #355C7D, #62a294, #EE7752); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
  /* background-repeat: no-repeat;*/
  /* background-attachment: fixed;*/
  position: relative;
  background-size: 400% 400%;
-  animation: change 10s ease-in-out infinite;
+  animation: change 15s ease-in-out infinite;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
 }
 
 @keyframes change{
