@@ -14,7 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatTabsModule} from "@angular/material/tabs";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import { MatInputModule } from '@angular/material/input';
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {HttpClientModule} from "@angular/common/http";
@@ -29,23 +29,24 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     AuthenticatonPageComponent,
     SignUpPageComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireAuthModule,
-    BrowserAnimationsModule,
-    MatTabsModule,
-    MatFormFieldModule,
-    MatInputModule,
-    ReactiveFormsModule,
-    MatButtonModule,
-    MatIconModule,
-    HttpClientModule,
-    MatTooltipModule
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        AngularFireModule.initializeApp(environment.firebaseConfig),
+        AngularFireAuthModule,
+        BrowserAnimationsModule,
+        MatTabsModule,
+        MatFormFieldModule,
+        MatInputModule,
+        ReactiveFormsModule,
+        MatButtonModule,
+        MatIconModule,
+        HttpClientModule,
+        MatTooltipModule,
+        FormsModule
 
 
-  ],
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -7,13 +7,23 @@ import {AuthenticationService} from "../service/authentication.service";
   styleUrls: ['./sign-up-page.component.css']
 })
 export class SignUpPageComponent implements OnInit {
+  password: any;
+  email: any;
 
   constructor(private authService: AuthenticationService) { }
 
   ngOnInit(): void {
   }
-  loginGoogle(){
-    this.authService.googleLogin();
+
+  onSubmit(formDataSignup: { valid: any; value: { email: string; password: string; }; }){
+    if (formDataSignup.valid){
+      console.log(formDataSignup.value);
+      this.authService.emailSignup(
+        formDataSignup.value.email,
+        formDataSignup.value.password
+      )
+    }
   }
+
 
 }

@@ -11,6 +11,8 @@ import {DomSanitizer} from "@angular/platform-browser";
 export class LoginPageComponent   {
 
   googleLogoURL = 'https://raw.githubusercontent.com/fireflysemantics/logo/master/Google.svg';
+  password: any;
+  email: any;
 
   constructor(private authService: AuthenticationService,
               private matIconRegistry: MatIconRegistry,
@@ -23,4 +25,14 @@ export class LoginPageComponent   {
   loginGoogle(){
     this.authService.googleLogin();
   }
+  onSubmit(formData: { valid: any; value: { email: string; password: string; }; }) {
+    if (formData.valid) {
+      console.log(formData.value);
+      this.authService.login(
+        formData.value.email,
+        formData.value.password
+      );
+    }
+  }
+
 }

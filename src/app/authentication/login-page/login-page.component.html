@@ -1,21 +1,22 @@
-<form class="example-form example-full-width">
+<form class="example-form example-full-width" #formData='ngForm' (ngSubmit)='onSubmit(formData)'>
     <mat-form-field class="example-full-width" appearance="outline" >
       <mat-label>E-mail</mat-label>
       <mat-icon matPrefix>email</mat-icon>
-      <input matInput value="">
+      <input type="text" matInput [(ngModel)]="email" name="email" >
     </mat-form-field>
 
   <mat-form-field class="example-full-width" appearance="outline">
     <mat-label>Password</mat-label>
     <mat-icon matPrefix>lock</mat-icon>
-    <input matInput value="">
+    <input matInput type="password" [(ngModel)]="password" name="password">
   </mat-form-field>
-  <button routerLink="/dashboard" mat-stroked-button>LOGIN</button>
+  <button type="submit"  mat-stroked-button (click)="onSubmit(formData)">LOGIN</button>
 <button mat-button
         class="example-full-width"
         matTooltip="Mit Google einloggen"
-
+        (click)="loginGoogle()"
 >
-  <mat-icon  (click)="loginGoogle()" svgIcon="logo"></mat-icon>
+  <mat-icon svgIcon="logo"></mat-icon>
 </button>
 </form>
+

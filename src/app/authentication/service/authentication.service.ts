@@ -16,7 +16,7 @@ export class AuthenticationService {
     this.afAuth.signInWithEmailAndPassword(email, password)
       .then(value => {
         console.log('Du bist eingeloggt');
-        this.router.navigateByUrl('/profile')
+        this.router.navigateByUrl('/dashboard')
       })
       .catch(err => {
         console.log('Fehler beim einloggen', err.message);
@@ -24,10 +24,12 @@ export class AuthenticationService {
   }
 
   emailSignup(email: string, password: string) {
+    console.log('emailSignupMail', email);
+    console.log('emailSignupPW', password);
     this.afAuth.createUserWithEmailAndPassword(email, password)
       .then(value => {
         console.log('Erfolgreich registriert', value)
-        this.router.navigateByUrl('/profile')
+        this.router.navigateByUrl('/dashboard')
       })
       .catch(error => {
         console.log('Fehler beim registrieren', error)
@@ -38,8 +40,8 @@ export class AuthenticationService {
     const provider = new firebase.auth.GoogleAuthProvider();
     return this.oAuthLogin(provider)
       .then(value => {
-        // console.log('Erfolgreich mit Google angemeldet', value),
-          this.router.navigateByUrl('/profile');
+         console.log('Erfolgreich mit Google angemeldet', value),
+          this.router.navigateByUrl('/dashboard');
       })
       .catch(error => {
         console.log('Fehler beim anmelden mit Google ', error)
