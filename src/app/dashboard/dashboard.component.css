@@ -1,11 +1,22 @@
+*{
+  font-size: 2rem;
 
+}
 .row{
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   align-content: center;
 
 
+}
+
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  font-size: 50px;
 }
 
 .column{
@@ -17,17 +28,104 @@
   text-align: center;
   align-content: center;
 
+}
+#mega .column:first-child {
+
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+}
+#mega .column:last-child {
+
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+}
+#cool .column:last-child {
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+}
+#cool .column:first-child{
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.column_item{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  line-height: 700px;
+
+
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  z-index: 999;
+
 
 }
 
 .button{
-background: rgba(236, 236, 236, 0.28);
-  margin-top: 10%;
-  padding: 20px;
-  outline: none;
-  box-shadow: -7px -7px 20px 0 #fff9, -4px -4px 5px 0 rgba(255, 255, 255, 0.32);
-  border: none;
-  font-size: xxx-large;
-  color: rgba(255,255,255,0.3);
-  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.22);
+  padding: 5rem;
+  border-radius: 20px;
 }
+
+a:hover{
+  background-color: rgba(255,255,255,0.2);
+  padding: 5rem;
+  color: black;
+  border-radius: 20px;
+}
+/*#billi{*/
+/*  position: absolute;*/
+/*  top: 15%;*/
+/*  right: 20%;*/
+/*  height:250px;*/
+/*  width: 200px;*/
+/*  border: 15px solid rgba(255,255,255,0.5);*/
+/*  border-radius: 20px;*/
+/*  z-index: -20;*/
+/*}*/
+
+/*#billi .circle{*/
+/*  position: absolute;*/
+/*  bottom: -15px;*/
+/*  left: 130px;*/
+/*  width: 100px;*/
+/*  height:100px;*/
+/*  background-color: white;*/
+/*  border-radius: 100%;*/
+/*  animation: 2s ease-in-out 0s 1 slideInFromLeft;*/
+/*  cursor: pointer;*/
+/*  z-index: 3;*/
+/*}*/
+/*@keyframes slideInFromLeft {*/
+/*  0% {*/
+/*    transform: translateX(-150%);*/
+/*  }*/
+/*  100% {*/
+/*    transform: translateX(0);*/
+/*  }*/
+/*}*/
+
+/*#billi .circle p{*/
+/* position: absolute;*/
+/*  top:40%;*/
+/*  left: 30px;*/
+/*  font-size: 2em;*/
+/*  color: #355C7D;*/
+/*}*/
+
+/*#billi span p{*/
+/*  position: absolute;*/
+/*  top: 80px;*/
+/*  left: 60px;*/
+/*  font-size: 100px;*/
+
+
+/*}*/
+
