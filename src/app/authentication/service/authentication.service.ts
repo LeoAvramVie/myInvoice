@@ -15,7 +15,7 @@ export class AuthenticationService {
   login(email: string, password: string) {
     this.afAuth.signInWithEmailAndPassword(email, password)
       .then(value => {
-        console.log('Du bist eingeloggt');
+        console.log('Du bist eingeloggt', value);
         this.router.navigateByUrl('/dashboard')
       })
       .catch(err => {
