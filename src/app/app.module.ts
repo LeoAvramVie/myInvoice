@@ -19,6 +19,10 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {HttpClientModule} from "@angular/common/http";
 import {MatTooltipModule} from "@angular/material/tooltip";
+import { ProfilComponent } from './profil/profil.component';
+import { BillComponent } from './bill/bill.component';
+import { OverwiewComponent } from './overwiew/overwiew.component';
+import { ClientsComponent } from './clients/clients.component';
 
 
 @NgModule({
@@ -27,7 +31,11 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     LoginPageComponent,
     DashboardComponent,
     AuthenticatonPageComponent,
-    SignUpPageComponent
+    SignUpPageComponent,
+    ProfilComponent,
+    BillComponent,
+    OverwiewComponent,
+    ClientsComponent
   ],
     imports: [
         BrowserModule,
