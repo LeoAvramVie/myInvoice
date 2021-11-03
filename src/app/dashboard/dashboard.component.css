@@ -5,6 +5,8 @@ display: flex;
   flex-direction: row;
   justify-content: center;
   justify-items: center;
+  flex-flow: wrap;
+
 
 }
 
@@ -13,7 +15,7 @@ display: flex;
 
 
 .box__container__items div{
-  background-color: rgba(0,0,0,0.5) !important;
+  /*background-color: #ececec;*/
   height:15em;
   width: 60em;
   border-radius: 10px;
@@ -22,7 +24,17 @@ display: flex;
   z-index: 3;
   backdrop-filter: blur(4px);
   margin-top: 20px;
+  text-align: center;
+}
 
-
-
+.button{
+background: rgba(236, 236, 236, 0.28);
+  margin-top: 10%;
+  padding: 20px;
+  outline: none;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9;
+  border: none;
+  font-size: xxx-large;
+  color: white;
+  text-transform: uppercase;
 }
